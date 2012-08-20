@@ -1,0 +1,3 @@
+#include "Res/FUURes.rc"
+#include "Res/FUUDlg.rc"
+#include "Res/fuuMnu.rc"

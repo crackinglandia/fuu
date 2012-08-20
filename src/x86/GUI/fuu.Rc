@@ -1,0 +1,4 @@
+#include "Res/fuuMnu.rc"
+#include "Res/fuuRes.rc"
+#include "Res/fuuDlg.rc"
+1			24   DISCARDABLE "Res/fuu.exe.manifest"

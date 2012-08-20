@@ -1,0 +1,6 @@
+; $Id: deMew.Def 90 2010-07-30 15:57:48Z nahuelriva $
+
+LIBRARY
+EXPORTS
+DoUnpack
+GetPluginName

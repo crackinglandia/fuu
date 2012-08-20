@@ -1,0 +1,37 @@
+#define IDD_DIALOG1 101
+#define IDC_IMG1 1009
+#define BrowseFileBtn 1005
+#define RefreshBtn 1010
+#define FileNameEdit 1001
+#define IDC_STC2 1002
+#define PluginComboBox 1008
+#define IDC_LST2 1004
+#define RealignPECheckBox 1012
+#define UnpackBtn 1003
+#define AboutBtn 1006
+#define ExitBtn 1007
+#define IDC_UDC1 1013
+#define IDC_UDC2 1011
+#define CopyOverlayDataBt 1014
+IDD_DIALOG1 DIALOGEX 6,6,320,233
+CAPTION "FUU - [ Faster Universal Unpacker v0.1.1 Beta x64 ]"
+FONT 8,"MS Sans Serif",0,0
+MENU 10000
+STYLE 0x10CA0800
+EXSTYLE 0x00000010
+BEGIN
+  CONTROL "#600",IDC_IMG1,"Static",0x5000020E,8,5,300,37,0x00000000
+  CONTROL "Browse",BrowseFileBtn,"Button",0x50010000,256,48,53,15,0x00000000
+  CONTROL "Refresh",RefreshBtn,"Button",0x50010000,256,64,53,15,0x00000000
+  CONTROL "Drag a file here or browse for it ...",FileNameEdit,"Edit",0x50010000,56,48,194,13,0x00000200
+  CONTROL "[ Filename ]",IDC_STC2,"Static",0x50001201,6,48,44,13,0x00000000
+  CONTROL "",PluginComboBox,"ComboBox",0x50010003,4,64,248,61,0x00000000
+  CONTROL "",IDC_LST2,"ListBox",0x50210141,4,83,304,83,0x00000200
+  CONTROL "Realign PE file (it can produce invalid files)",RealignPECheckBox,"Button",0x50010003,4,186,158,12,0x00000000
+  CONTROL "Unpack",UnpackBtn,"Button",0x58010000,126,203,56,15,0x00000000
+  CONTROL "About",AboutBtn,"Button",0x50010000,188,203,56,15,0x00000000
+  CONTROL "Exit",ExitBtn,"Button",0x50010000,250,203,56,15,0x00000000
+  CONTROL "",IDC_UDC1,"UDC_HyperLink",0x50000000,4,212,116,6,0x00000000
+  CONTROL "",IDC_UDC2,"UDC_HyperLink",0x50000000,4,203,116,6,0x00000000
+  CONTROL "Copy Overlay Data",CopyOverlayDataBt,"Button",0x50010003,4,171,158,12,0x00000000
+END

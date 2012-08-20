@@ -1,0 +1,137 @@
+[Project]
+Assembler=masm64
+Type=Dll Project
+Description=FUU plugin Sample
+Backup=$P\Bak\
+Group=1
+GroupExpand=1
+Debug=0
+Res.rc=1
+[Files]
+1=PluginSample.Asm
+2=PluginSample.Inc
+3=PluginSample.Def
+4=PluginSample.rc
+5=MainDialgo.dlg
+6=MainDialog.inc
+7=..\..\External\funciones64.inc
+8=..\..\External\ListView.inc
+[MakeFiles]
+0=PluginSample.rap
+1=PluginSample.rc
+2=PluginSample.asm
+3=PluginSample.obj
+4=PluginSample.res
+5=PluginSample.exe
+6=PluginSample.def
+7=PluginSample.dll
+8=PluginSample.txt
+9=PluginSample.lib
+10=PluginSample.mak
+11=PluginSample.hla
+12=PluginSample.com
+13=PluginSample.ocx
+14=PluginSample.idl
+15=PluginSample.tlb
+[MakeDef]
+Menu=1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+1=4,O,$B\RC.EXE /v,1
+2=3,O,$B\ML64.EXE /c /Cp /nologo /I"$I",2
+3=7,O,$B\LINK.EXE /SUBSYSTEM:WINDOWS /RELEASE /DLL /DEF:$6 /LIBPATH:"$L" /entry:DllEntry /OUT:"$7",3,4
+4=0,0,,5
+5=rsrc.obj,O,$B\CVTRES.EXE,rsrc.res
+6=*.obj,O,$B\ML64.EXE /c /Cp /nologo /I"$I",*.asm
+7=0,0,$E\OllyDbg,5
+11=4,O,$B\RC.EXE /v,1
+12=3,O,$B\ML64.EXE /c /Cp /nologo /Zi /I"$I",2
+13=7,O,$B\LINK.EXE /SUBSYSTEM:WINDOWS /DEBUG /DLL /DEF:$6 /LIBPATH:"$L" /entry:main /OUT:"$7",3
+14=0,0,,5
+15=rsrc.obj,O,$B\CVTRES.EXE,rsrc.res
+16=*.obj,O,$B\ML64.EXE /c /Cp /nologo /I"$I",*.asm
+17=0,0,$E\OllyDbg,5
+[Group]
+Group=Added files,Assembly,Resources,Misc,Modules
+1=2
+2=2
+3=4
+4=3
+5=3
+6=2
+7=1
+8=1
+[VersionControl]
+Settings=1246
+Milestones=129
+MilestoneEvery=10
+MilestoneEveryCurrent=0
+MilestoneOnBuild=0.0.0.0
+MilestoneOnTime=2
+MilestoneOnDate=0
+MilestoneOnDateWhen=1
+MilestoneOnDateStatus=0
+MilestoneOnDateDate=25
+MilestoneOnDateTimeYear=2010
+MilestoneOnDateTimeMonth=7
+MilestoneOnDateTimeDate=24
+MilestoneOnDateTimeHour=16
+MilestoneOnDateTimeMin=18
+MilestoneOnDateTimeSec=10
+MilestoneOnDateTimeStatus=0
+BackupLocation=d:\Programas_asm\VCBackups\
+CompressionLevel=0
+DefaultComment=Project $N, $Z, Backup Created On $D At $T.
+ExcludeExt1=\
+ExcludeExt2=\
+ExcludeExt3=\
+ExcludeExt4=\
+FileVerLength=4
+FileVer2Range=0
+FileVer3Range=0
+FileVer4Range=0
+ProductVerLength=4
+ProductVer2Range=0
+ProductVer3Range=0
+ProductVer4Range=0
+[Colref]
+0=00FFFFFF
+1=00FFFFFF
+2=00FFFFFF
+3=00FFFFFF
+4=00FFFFFF
+5=00FFFFFF
+6=00FFFFFF
+7=00FFFFFF
+[Collapse]
+2=
+1=
+6=
+4=
+3=
+8=
+7=,
+[Size]
+2=0,0,0,0,1517
+1=0,0,0,0,521
+6=0,0,0,0,21593
+5=0,0,0,0
+4=0,0,0,0,32
+3=0,0,0,0,20
+8=0,0,0,0,0
+7=0,0,0,0,0
+[BookMark]
+0=
+1=
+2=
+3=
+4=
+5=
+6=
+7=
+8=
+9=
+[BreakPoint]
+0=
+[Find]
+1="TV_ITEM"
+[Resource]
+1=,1,8,..\..\External\ManifiestoW7.xml

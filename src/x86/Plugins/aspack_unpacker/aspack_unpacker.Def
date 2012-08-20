@@ -1,0 +1,5 @@
+; $Id: aspack_unpacker.Def 103 2011-02-18 22:28:34Z nahuelriva $
+
+LIBRARY
+EXPORTS GetPluginName
+EXPORTS DoUnpack

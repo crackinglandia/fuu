@@ -1,0 +1,5 @@
+; $Id$
+
+LIBRARY
+EXPORTS GetPluginName
+EXPORTS DoUnpack

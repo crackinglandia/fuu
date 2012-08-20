@@ -1,0 +1,4 @@
+LIBRARY PluginSample
+EXPORTS 
+GetPluginName 		
+DoUnpack

@@ -1,0 +1,6 @@
+; $Id: PFE-FUU.Def 101 2011-02-18 22:04:37Z nahuelriva $
+
+LIBRARY
+EXPORTS
+GetPluginName
+DoUnpack

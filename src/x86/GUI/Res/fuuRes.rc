@@ -1,0 +1,4 @@
+#define RoadRunner						500
+#define FuuLogo							600
+RoadRunner				ICON      DISCARDABLE "Res/Roadrunner.ico"
+FuuLogo					BITMAP    DISCARDABLE "Res/fuu_logo.bmp"

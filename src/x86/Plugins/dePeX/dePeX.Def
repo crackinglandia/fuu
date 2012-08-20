@@ -1,0 +1,5 @@
+; $Id: dePeX.Def 99 2010-10-13 01:16:20Z nahuelriva $
+
+LIBRARY
+EXPORTS GetPluginName
+EXPORTS DoUnpack
